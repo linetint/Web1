@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grid</title>    
+<meta charset="UTF-8">
+    
+<style>
+    
+    #grid{
+        
+        border:3px solid red;
+/*        display:grid를 통해 그리드로 화면을 분배할수 있다*/
+        display:grid;
+        
+/*
+해당 2개의 세로줄로 된 것을 가로줄로 통합할수 있고 앞에는 첫번째 div의 너비를 뒤에는 두번째 div의 너비를 정할수 있다.
+만약 1fr 1fr로 할시 두개의 div를 각각 1:1비율로 나눈다*/
+        grid-template-columns: 150px 1fr;
+    }
+    
+    
+    div{
+        
+        border:1px solid green;
+    }
+    
+    span{
+        
+        border:2px solid blue;
+    }
+
+    
+    
+</style>    
+    
+    
+</head>
+
+<body>
+
+<div id="grid">
+    <!--블럭 엘리먼트가 필요할 땐 div    -->
+    <div>NAVIGATION</div>
+    <div>ARTICLE</div>
+</div>    
+
+    <!--인라인 엘리먼트가 필요할 땐 span-->
+    <span>NAVIGATION</span>
+    <span>ARTICLE</span>    
+
+    
+</body>    
+    
+    
+    
+</html>
+
+
+
+
